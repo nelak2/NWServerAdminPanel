@@ -1,0 +1,88 @@
+﻿@model IEnumerable<NWServerAdminPanel.Models.Server>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NWNServerIP)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NWNServerIP) <b>:</b> @Html.DisplayFor(modelItem => item.Port)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Server Name: </b>@ViewBag.serverName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Module: </b>@ViewBag.moduleName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Players: </b>@ViewBag.currentPlayers <b> / </b> @ViewBag.maxPlayers
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Levels: </b>@ViewBag.minLevel <b> / </b> @ViewBag.maxLevel
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Allow Local Characters: </b>@ViewBag.allowLocalCharacters
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>PvP Mode: </b>@ViewBag.pvPMode
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Item Level Restrictions: </b>@ViewBag.itemLevelRestrictions
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Only One Party: </b>@ViewBag.onlyOneParty
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Player Pause Enabled: </b>@ViewBag.playerPauseEnabled
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Enforce Legal Characters: </b>@ViewBag.enforceLegalCharacters
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Unknown: </b>@ViewBag.unknown
+        </td>
+    </tr>
+}
+
+</table>

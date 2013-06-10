@@ -1,0 +1,77 @@
+﻿@model NWServerAdminPanel.Models.Server
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Server</legend>
+
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NWNServerIP)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NWNServerIP)
+            @Html.ValidationMessageFor(model => model.NWNServerIP)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Port)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Port)
+            @Html.ValidationMessageFor(model => model.Port)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SSHHostName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SSHHostName)
+            @Html.ValidationMessageFor(model => model.SSHHostName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SSHPort)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SSHPort)
+            @Html.ValidationMessageFor(model => model.SSHPort)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SSHUserName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SSHUserName)
+            @Html.ValidationMessageFor(model => model.SSHUserName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SSHPassword)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SSHPassword)
+            @Html.ValidationMessageFor(model => model.SSHPassword)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

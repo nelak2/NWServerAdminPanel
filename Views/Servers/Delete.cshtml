@@ -1,0 +1,60 @@
+﻿@model NWServerAdminPanel.Models.Server
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Server</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NWNServerIP)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NWNServerIP)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Port)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Port)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SSHHostName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SSHHostName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SSHPort)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SSHPort)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SSHUserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SSHUserName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SSHPassword)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SSHPassword)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

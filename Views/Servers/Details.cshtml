@@ -1,0 +1,57 @@
+﻿@model NWServerAdminPanel.Models.Server
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Server</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NWNServerIP)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NWNServerIP)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Port)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Port)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SSHHostName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SSHHostName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SSHPort)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SSHPort)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SSHUserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SSHUserName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SSHPassword)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SSHPassword)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
