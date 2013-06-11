@@ -1,0 +1,60 @@
+﻿@model NWServerAdminPanel.Models.Area
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Area</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Tags)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Tags)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.resref)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.resref)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.oldresref)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.oldresref)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Uploaded)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Uploaded)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastModified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastModified)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

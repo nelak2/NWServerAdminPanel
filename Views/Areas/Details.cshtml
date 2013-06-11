@@ -1,0 +1,57 @@
+﻿@model NWServerAdminPanel.Models.Area
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Area</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Tags)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Tags)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.resref)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.resref)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.oldresref)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.oldresref)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Uploaded)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Uploaded)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastModified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastModified)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
