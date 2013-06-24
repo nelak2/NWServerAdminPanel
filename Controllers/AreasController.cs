@@ -39,6 +39,7 @@ namespace NWServerAdminPanel.Controllers
 
         public ActionResult Create()
         {
+
             return View();
         }
 

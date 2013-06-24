@@ -182,6 +182,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Area.cs" />
     <Compile Include="Models\Server.cs" />
+    <Compile Include="Models\TempArea.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -303,7 +304,7 @@
     <Content Include="Views\Servers\Edit.cshtml" />
     <Content Include="Views\Servers\Delete.cshtml" />
     <Content Include="Views\Upload\Index.cshtml" />
-    <Content Include="Views\Upload\SelectAreas.cshtml" />
+    <Content Include="Views\Upload\AddAreas.cshtml" />
     <Content Include="Views\Areas\Index.cshtml" />
     <Content Include="Views\Areas\Details.cshtml" />
     <Content Include="Views\Areas\Create.cshtml" />

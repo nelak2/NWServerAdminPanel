@@ -1,18 +1,16 @@
 ﻿@model NWServerAdminPanel.Models.Area
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Add Area";
 }
 
-<h2>Edit</h2>
+<h2>Add Area</h2>
 
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
 
     <fieldset>
         <legend>Area</legend>
-
-        @Html.HiddenFor(model => model.ID)
 
         <div class="editor-label">
             @Html.LabelFor(model => model.Name)
@@ -63,7 +61,7 @@
         </div>
 
         <p>
-            <input type="submit" value="Save" />
+            <input type="submit" value="Create" />
         </p>
     </fieldset>
 }

@@ -3,9 +3,8 @@ using System.Data.Entity;
 
 namespace NWServerAdminPanel.Models
 {
-    public class Area
+    public class TempArea
     {
-        public int ID { get; set; }
         public string Name { get; set; }
         public string Tags { get; set; }
         public string Resref { get; set; }
@@ -15,10 +14,5 @@ namespace NWServerAdminPanel.Models
         public byte[] Git { get; set; }
         public DateTime Uploaded { get; set; }
         public DateTime LastModified { get; set; }
-    }
-
-    public class AreaDbContext : DbContext
-    {
-        public DbSet<Area> Areas { get; set; }
     }
 }
