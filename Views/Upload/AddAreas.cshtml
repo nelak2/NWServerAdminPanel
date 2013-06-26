@@ -4,13 +4,18 @@
     ViewBag.Title = "Add Area";
 }
 
-<h2>Add Area</h2>
+<h2>Add Area @ViewBag.CurrentArea of @ViewBag.TotalAreas</h2>
 
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
 
     <fieldset>
         <legend>Area</legend>
+        
+        <div class="editor-label">
+            @Html.Label("Update or Add")
+        </div>
+        @Html.DropDownList("AreaList", (SelectList)ViewBag.AreaList, "--Add New Area--")
 
         <div class="editor-label">
             @Html.LabelFor(model => model.Name)

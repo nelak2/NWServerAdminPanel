@@ -1,0 +1,14 @@
+﻿@using NWServerAdminPanel.Models
+@model NWServerAdminPanel.Models.Area
+
+@{
+    ViewBag.Title = "Upload Complete!";
+}
+
+<h2>Upload Complete!</h2>
+
+<h3>The following files were processed:</h3>
+@foreach (Area item in @ViewBag.Areas)
+{
+    @item.Name <br/>
+}

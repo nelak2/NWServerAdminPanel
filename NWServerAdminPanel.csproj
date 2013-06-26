@@ -174,15 +174,14 @@
     <Compile Include="Migrations\201306101752143_InitialCreate.Designer.cs">
       <DependentUpon>201306101752143_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201306110049347_Update-Database.cs" />
-    <Compile Include="Migrations\201306110049347_Update-Database.Designer.cs">
-      <DependentUpon>201306110049347_Update-Database.cs</DependentUpon>
+    <Compile Include="Migrations\201306260201541_Test.cs" />
+    <Compile Include="Migrations\201306260201541_Test.Designer.cs">
+      <DependentUpon>201306260201541_Test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Area.cs" />
     <Compile Include="Models\Server.cs" />
-    <Compile Include="Models\TempArea.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -310,6 +309,7 @@
     <Content Include="Views\Areas\Create.cshtml" />
     <Content Include="Views\Areas\Edit.cshtml" />
     <Content Include="Views\Areas\Delete.cshtml" />
+    <Content Include="Views\Upload\UploadDone.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -327,8 +327,8 @@
     <EmbeddedResource Include="Migrations\201306101752143_InitialCreate.resx">
       <DependentUpon>201306101752143_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201306110049347_Update-Database.resx">
-      <DependentUpon>201306110049347_Update-Database.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201306260201541_Test.resx">
+      <DependentUpon>201306260201541_Test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

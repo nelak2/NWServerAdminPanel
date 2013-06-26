@@ -5,13 +5,13 @@ namespace NWServerAdminPanel.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class UpdateDatabase : IMigrationMetadata
+    public sealed partial class Test : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateDatabase));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Test));
         
         string IMigrationMetadata.Id
         {
-            get { return "201306110049347_Update-Database"; }
+            get { return "201306260201541_Test"; }
         }
         
         string IMigrationMetadata.Source
